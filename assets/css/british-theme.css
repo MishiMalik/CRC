@@ -10,26 +10,26 @@
     --british-white: #FFFFFF;
     --navy-dark: #000D2F;
     --navy-light: #003087;
-    
+
     /* Accent Colors */
     --accent-gold: #FFD700;
     --accent-silver: #C0C0C0;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #012169 0%, #003087 100%);
     --gradient-secondary: linear-gradient(135deg, #C8102E 0%, #E31837 100%);
     --gradient-hero: linear-gradient(135deg, rgba(1, 33, 105, 0.95) 0%, rgba(200, 16, 46, 0.85) 100%);
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(1, 33, 105, 0.08);
     --shadow-md: 0 4px 16px rgba(1, 33, 105, 0.12);
     --shadow-lg: 0 8px 32px rgba(1, 33, 105, 0.16);
     --shadow-xl: 0 20px 60px rgba(1, 33, 105, 0.2);
-    
+
     /* Typography */
     --font-primary: 'Poppins', 'Segoe UI', sans-serif;
     --font-secondary: 'Nunito Sans', 'Helvetica Neue', sans-serif;
-    
+
     /* Transitions */
     --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -331,6 +331,7 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -371,10 +372,13 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 0.5;
     }
+
     50% {
         transform: scale(1.1);
         opacity: 0.8;
@@ -683,6 +687,7 @@ body {
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -694,6 +699,7 @@ body {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -704,6 +710,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -717,7 +724,7 @@ body {
     .home-carousel .carousel-caption h3 {
         font-size: 2.8rem;
     }
-    
+
     .main-heading {
         font-size: 36px;
     }
@@ -727,27 +734,27 @@ body {
     .home-carousel .carousel-inner {
         height: 450px;
     }
-    
+
     .home-carousel .carousel-item img {
         height: 450px;
     }
-    
+
     .home-carousel .carousel-caption h3 {
         font-size: 2rem;
     }
-    
+
     .home-carousel .carousel-caption p {
         font-size: 1rem;
     }
-    
+
     .feature-cards {
         margin-top: 0;
     }
-    
+
     .main-heading {
         font-size: 28px;
     }
-    
+
     .menu-header-container {
         border-radius: 8px;
         margin: 0 10px;

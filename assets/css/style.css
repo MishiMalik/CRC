@@ -114,6 +114,7 @@ body {
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -125,6 +126,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -135,6 +137,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -242,7 +245,8 @@ body {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* margin-top: -80px; */
 }
-.crc-logo{
+
+.crc-logo {
     margin-top: -40px;
     position: relative;
     z-index: -1;
@@ -253,6 +257,7 @@ body {
     z-index: 10;
     margin-top: -22px !important;
 }
+
 /* .home-carousel{
     margin-top: -70px !important;
 } */
@@ -336,7 +341,8 @@ body {
     position: relative;
     z-index: 1;
 }
-.feature-cards-card  .icon img {
+
+.feature-cards-card .icon img {
     width: 50px;
     height: 50px;
     object-fit: contain;
@@ -1362,12 +1368,14 @@ body {
         margin: 0 auto;
     }
 }
+
 @media only screen and ((min-width: 1200px) and (max-width: 1400px)) {
- 
-   .menu-header-container{
-     max-width: 1250px !important;
-   }
+
+    .menu-header-container {
+        max-width: 1250px !important;
+    }
 }
+
 @media only screen and (max-width:1200px) {
     .home-alert-text h2 {
         font-size: 32px;
@@ -1725,7 +1733,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -1993,7 +2001,9 @@ textarea.form-control {
     margin-bottom: 20px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     max-width: 100%;
 }
 
@@ -2272,56 +2282,56 @@ input[type="submit"]:hover::before {
         font-size: 40px;
         line-height: 40px;
     }
-    
+
     .carousel-text h2 {
         font-size: 16px;
     }
-    
+
     .carousel-text p {
         width: 90%;
         font-size: 12px;
     }
-    
+
     .main-heading {
         font-size: 28px;
     }
-    
+
     .secondry-heading {
         font-size: 20px;
     }
-    
+
     .feature-cards-card {
         padding: 20px 15px;
     }
-    
+
     .stat-card {
         padding: 25px 15px;
     }
-    
+
     .stat-card h2 {
         font-size: 1.8rem;
     }
-    
+
     .amenity-card {
         margin-bottom: 15px;
     }
-    
+
     .footer-info {
         flex-direction: column !important;
     }
-    
+
     .footer-column {
         text-align: center !important;
     }
-    
+
     section {
         padding: 40px 0 !important;
     }
-    
+
     .py-5 {
         padding: 30px 0 !important;
     }
-    
+
     .container {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -2412,6 +2422,7 @@ hr {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -2425,9 +2436,12 @@ hr {
 /* PULSE ANIMATION FOR CTA */
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 4px 12px rgba(229, 191, 32, 0.4);
     }
+
     50% {
         box-shadow: 0 4px 20px rgba(229, 191, 32, 0.6);
     }
@@ -2439,7 +2453,11 @@ hr {
 
 /* SMOOTH TRANSITIONS FOR ALL INTERACTIVE ELEMENTS */
 
-button, a, input, select, textarea {
+button,
+a,
+input,
+select,
+textarea {
     transition: var(--transition);
 }
 
