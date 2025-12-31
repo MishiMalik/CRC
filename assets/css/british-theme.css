@@ -1,0 +1,783 @@
+/* ==========================================
+   BRITISH FLAG COLOR THEME - NEW DESIGN
+   Red: #C8102E | Blue: #012169 | White: #FFFFFF
+   ========================================== */
+
+:root {
+    /* British Flag Colors */
+    --british-red: #C8102E;
+    --british-blue: #012169;
+    --british-white: #FFFFFF;
+    --navy-dark: #000D2F;
+    --navy-light: #003087;
+    
+    /* Accent Colors */
+    --accent-gold: #FFD700;
+    --accent-silver: #C0C0C0;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #012169 0%, #003087 100%);
+    --gradient-secondary: linear-gradient(135deg, #C8102E 0%, #E31837 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(1, 33, 105, 0.95) 0%, rgba(200, 16, 46, 0.85) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(1, 33, 105, 0.08);
+    --shadow-md: 0 4px 16px rgba(1, 33, 105, 0.12);
+    --shadow-lg: 0 8px 32px rgba(1, 33, 105, 0.16);
+    --shadow-xl: 0 20px 60px rgba(1, 33, 105, 0.2);
+    
+    /* Typography */
+    --font-primary: 'Poppins', 'Segoe UI', sans-serif;
+    --font-secondary: 'Nunito Sans', 'Helvetica Neue', sans-serif;
+    
+    /* Transitions */
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
+
+body {
+    font-family: var(--font-secondary);
+    color: #2d3748;
+    background: var(--british-white);
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION - MODERN DESIGN
+   ========================================== */
+
+.header {
+    background: var(--gradient-primary);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+}
+
+.header .contact-details a {
+    color: var(--british-white);
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.header .contact-details a:hover {
+    color: var(--accent-gold);
+    transform: translateX(2px);
+}
+
+.header .contact-details i {
+    color: var(--british-red);
+    font-size: 16px;
+}
+
+/* CRC Logo Banner with Modern Overlay */
+.crc-logo {
+    position: relative;
+    margin-top: -50px;
+    z-index: 1;
+    filter: drop-shadow(0 10px 30px rgba(1, 33, 105, 0.3));
+}
+
+/* Navigation Menu - Glass Morphism Effect */
+.menu-header {
+    position: relative;
+    z-index: 100;
+    margin-top: -30px;
+}
+
+.menu-header-container {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(1, 33, 105, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 8px 24px !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px !important;
+    font-weight: 600;
+    color: var(--british-blue) !important;
+    padding: 12px 12px !important;
+    position: relative;
+    transition: var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
+    right: 18px;
+    height: 3px;
+    background: var(--gradient-secondary);
+    transform: scaleX(0);
+    transition: var(--transition-normal);
+    border-radius: 2px;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+    transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--british-red) !important;
+    transform: translateY(-2px);
+}
+
+/* Dropdown Menu - Modern Style */
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(1, 33, 105, 0.1);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    padding: 10px 16px;
+    transition: var(--transition-fast);
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background: var(--gradient-primary);
+    color: var(--british-white) !important;
+    transform: translateX(5px);
+}
+
+/* ==========================================
+   HERO CAROUSEL - DRAMATIC REDESIGN
+   ========================================== */
+
+.home-carousel .carousel-inner {
+    height: 650px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-carousel .carousel-item {
+    position: relative;
+}
+
+.home-carousel .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-hero);
+    z-index: 1;
+}
+
+.home-carousel .carousel-item img {
+    height: 650px;
+    object-fit: cover;
+    filter: brightness(0.75) contrast(1.2);
+    transition: var(--transition-slow);
+}
+
+.home-carousel .carousel-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.85) contrast(1.25);
+}
+
+.home-carousel .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-carousel .carousel-caption h3 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--british-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: slideInDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    line-height: 1.2;
+    background: linear-gradient(to right, #ffffff, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home-carousel .carousel-caption p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Carousel Controls - Modern Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    background: rgba(200, 16, 46, 0.9);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: var(--transition-normal);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background: var(--british-red);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev {
+    left: 30px;
+}
+
+.carousel-control-next {
+    right: 30px;
+}
+
+/* ==========================================
+   FEATURE CARDS - ELEVATED DESIGN
+   ========================================== */
+
+.feature-cards-section {
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    padding-top: 80px;
+}
+
+.feature-cards {
+    margin-top: -80px;
+    position: relative;
+    z-index: 50;
+}
+
+.feature-cards-card {
+    background: var(--british-white);
+    border-radius: 20px;
+    padding: 40px 28px;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid transparent;
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.feature-cards-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gradient-secondary);
+    transform: scaleX(0);
+    transition: var(--transition-normal);
+}
+
+.feature-cards-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(1, 33, 105, 0.05) 0%, transparent 70%);
+    opacity: 0;
+    transition: var(--transition-slow);
+}
+
+.feature-cards-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--british-red);
+}
+
+.feature-cards-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-cards-card:hover::after {
+    opacity: 1;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.feature-cards-card .icon {
+    background: var(--gradient-primary);
+    width: 110px !important;
+    height: 110px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(1, 33, 105, 0.3);
+    transition: var(--transition-normal);
+}
+
+.feature-cards-card .icon::before {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: var(--gradient-secondary);
+    opacity: 0;
+    transition: var(--transition-normal);
+    z-index: -1;
+}
+
+.feature-cards-card:hover .icon {
+    transform: translateY(-10px) rotate(360deg);
+}
+
+.feature-cards-card:hover .icon::before {
+    opacity: 1;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.feature-cards-card .icon img {
+    width: 60px;
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
+.feature-cards-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--british-blue);
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+    transition: var(--transition-fast);
+}
+
+.feature-cards-card:hover h2 {
+    color: var(--british-red);
+}
+
+.feature-cards-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4a5568;
+}
+
+/* ==========================================
+   BUTTONS - BRITISH THEME
+   ========================================== */
+
+.main-btn {
+    background: var(--gradient-secondary);
+    color: var(--british-white);
+    padding: 16px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(200, 16, 46, 0.3);
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: var(--transition-normal);
+    z-index: -1;
+}
+
+.main-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(200, 16, 46, 0.4);
+    color: var(--british-white);
+}
+
+.main-btn:hover::before {
+    left: 0;
+}
+
+/* ==========================================
+   HEADINGS - MODERN TYPOGRAPHY
+   ========================================== */
+
+.main-heading {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--british-blue);
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-secondary);
+    border-radius: 2px;
+}
+
+.secondry-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--british-blue);
+}
+
+.gradient-text {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ==========================================
+   SERVICE CARDS - PREMIUM DESIGN
+   ========================================== */
+
+.amenity-card {
+    background: var(--british-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    border: 2px solid transparent;
+    height: 100%;
+}
+
+.amenity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: var(--transition-normal);
+}
+
+.amenity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--british-blue);
+}
+
+.amenity-card:hover::before {
+    transform: scaleX(1);
+}
+
+.amenity-card img {
+    transition: var(--transition-slow);
+    border-radius: 12px;
+}
+
+.amenity-card:hover img {
+    transform: scale(1.08);
+}
+
+.amenity-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--british-blue);
+    transition: var(--transition-fast);
+}
+
+.amenity-card:hover h3 {
+    color: var(--british-red);
+}
+
+/* ==========================================
+   STATISTICS SECTION
+   ========================================== */
+
+.stat-card {
+    background: var(--british-white);
+    border-radius: 16px;
+    padding: 36px 24px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-secondary);
+    transform: scaleX(0);
+    transition: var(--transition-normal);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--british-red);
+}
+
+.stat-card:hover::before {
+    transform: scaleX(1);
+}
+
+.stat-card img {
+    filter: drop-shadow(0 4px 8px rgba(200, 16, 46, 0.3));
+    transition: var(--transition-normal);
+}
+
+.stat-card:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.stat-card h2 {
+    color: var(--british-red) !important;
+    font-weight: 800;
+    font-size: 3rem !important;
+}
+
+.stat-card p {
+    color: var(--british-blue);
+    font-weight: 600;
+}
+
+/* ==========================================
+   CONTACT FORM - MODERN DESIGN
+   ========================================== */
+
+.contact-area {
+    background: var(--gradient-hero);
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin: 40px 0;
+}
+
+.contact-text .title h2 {
+    color: var(--british-white);
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.contact-text .title span {
+    color: var(--accent-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-control,
+.form-input {
+    border-radius: 12px;
+    padding: 14px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    transition: var(--transition-fast);
+    font-size: 15px;
+}
+
+.form-control:focus,
+.form-input:focus {
+    border-color: var(--british-red);
+    box-shadow: 0 0 0 4px rgba(200, 16, 46, 0.1);
+    background: var(--british-white);
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--british-white);
+}
+
+/* ==========================================
+   FOOTER - MODERN DESIGN
+   ========================================== */
+
+.footer-container {
+    background: var(--gradient-primary) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gradient-secondary);
+}
+
+.footer-container a:hover {
+    color: var(--accent-gold) !important;
+    transform: translateX(3px);
+}
+
+/* ==========================================
+   ANIMATIONS
+   ========================================== */
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .home-carousel .carousel-caption h3 {
+        font-size: 2.8rem;
+    }
+    
+    .main-heading {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-carousel .carousel-inner {
+        height: 450px;
+    }
+    
+    .home-carousel .carousel-item img {
+        height: 450px;
+    }
+    
+    .home-carousel .carousel-caption h3 {
+        font-size: 2rem;
+    }
+    
+    .home-carousel .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .feature-cards {
+        margin-top: 0;
+    }
+    
+    .main-heading {
+        font-size: 28px;
+    }
+    
+    .menu-header-container {
+        border-radius: 8px;
+        margin: 0 10px;
+    }
+}
+
+/* ==========================================
+   UTILITY CLASSES
+   ========================================== */
+
+.bg-british-blue {
+    background: var(--british-blue);
+}
+
+.bg-british-red {
+    background: var(--british-red);
+}
+
+.text-british-blue {
+    color: var(--british-blue);
+}
+
+.text-british-red {
+    color: var(--british-red);
+}
+
+.gradient-bg-primary {
+    background: var(--gradient-primary);
+}
+
+.gradient-bg-secondary {
+    background: var(--gradient-secondary);
+}

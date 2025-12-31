@@ -1,0 +1,136 @@
+/* Membership Section Styles */
+.membership-section {
+    background: #f8f9fa;
+    position: relative;
+}
+
+.membership-section .how-it-works {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.membership-section .how-it-works h3 {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.membership-section .how-it-works ul li {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.membership-section .how-it-works ul li:last-child {
+    border-bottom: none;
+}
+
+.membership-section .card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.membership-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.membership-section .card.popular {
+    border: 2px solid var(--secondry);
+    position: relative;
+}
+
+.membership-section .popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--secondry);
+    color: var(--primary);
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom-left-radius: 15px;
+}
+
+.membership-section .card-header {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.membership-section .card-header h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.membership-section .card-header .price {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 15px 0 0;
+}
+
+.membership-section .card-header .period {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+.membership-section .card-body {
+    padding: 2rem;
+}
+
+.membership-section .card-body ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.membership-section .card-body ul li:last-child {
+    border-bottom: none;
+}
+
+.membership-section .card-footer {
+    background: transparent;
+    border-top: none;
+    padding: 1.5rem;
+}
+
+.membership-section .main-btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .membership-section .card {
+        margin-bottom: 30px;
+    }
+    
+    .membership-section .how-it-works {
+        padding: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes popularBadgePulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.membership-section .popular-badge {
+    animation: popularBadgePulse 2s infinite;
+}
