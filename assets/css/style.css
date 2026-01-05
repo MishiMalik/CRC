@@ -49,7 +49,7 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: 1;
-    background: linear-gradient(135deg, #1a2e4d 0%, #0f1a28 100%);
+    /* background: linear-gradient(135deg, #1a2e4d 0%, #0f1a28 100%); */
 }
 
 .carousel-item img {
@@ -1605,7 +1605,9 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
+.nav-item{
+    padding: 0 10px !important;
+}
 /* Dropdown hover effect */
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -2510,7 +2512,7 @@ a:not(.btn):not(.main-btn):not(.amenity-card)::after {
     position: absolute;
     /* bottom: -2px;
     left: 0; */
-    top: 18px;
+    top: 22px;
     width: 0;
     height: 2px;
     background: linear-gradient(90deg, var(--primary), var(--secondry));

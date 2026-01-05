@@ -127,7 +127,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--british-red) !important;
+    /* color: var(--british-red) !important; */
     transform: translateY(-2px);
 }
 
@@ -139,7 +139,7 @@ body {
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
     padding: 12px;
-    margin-top: 8px;
+    margin-top: -7px;
 }
 
 .dropdown-item {
@@ -177,7 +177,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-hero);
+    /* background: var(--gradient-hero); */
     z-index: 1;
 }
 
@@ -201,8 +201,10 @@ body {
     right: 10%;
     text-align: center;
     z-index: 2;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    background-color: #012069a9;
+    border-radius: 30px;
 }
 
 .home-carousel .carousel-caption h3 {
