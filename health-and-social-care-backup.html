@@ -249,49 +249,40 @@
     </div>
 <main>
 
-<!-- Enhanced Carousel -->
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
-  </div>
+
+<!-- Carousel -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" style="background-image: url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/hhg-1920w.jpg');">
-      <div class="carousel-caption">
-        <h3>Health & Social Care Excellence</h3>
-        <p>Comprehensive compliance solutions for care providers across the UK</p>
-        <a class="btn btn-gold-cta btn-lg mt-3 px-5" href="contact.html">Get Started</a>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Slide title</h3>
+        <p>Write your caption here</p>
+        <a class="btn btn-primary" href="#">Button</a>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/v-1920w.jpg');">
-      <div class="carousel-caption">
-        <h3 class="text-warning">Immigration Services & Visa Applications</h3>
-        <p>Raising the benchmark in quality care</p>
-        <a class="btn btn-gold-cta btn-lg mt-3 px-5" href="contact.html">Learn More</a>
+      <div class="carousel-caption d-none d-md-block">
+        <p class="text-danger fst-italic">Immigration Services and Visa Applications</p>
+        <span>Raising the benchmark in quality care</span>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/ggb-1920w.jpg');">
-      <div class="carousel-caption">
-        <h3>CQC Compliance Support</h3>
-        <p>Expert guidance to achieve outstanding ratings</p>
-        <a class="btn btn-gold-cta btn-lg mt-3 px-5" href="our-services.html">Our Services</a>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Slide title</h3>
+        <p>Write your caption here</p>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/ll-1920w.jpg');">
-      <div class="carousel-caption">
-        <h3>Professional Care Standards</h3>
-        <p>Helping you maintain the highest quality of care</p>
-        <a class="btn btn-gold-cta btn-lg mt-3 px-5" href="contact.html">Contact Us</a>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Slide title</h3>
+        <p>Write your caption here</p>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/oo-1920w.jpg');">
-      <div class="carousel-caption">
-        <h3>CRC Will Help Care Providers</h3>
-        <p>Transform challenges into opportunities for excellence</p>
-        <a class="btn btn-gold-cta btn-lg mt-3 px-5" href="contact.html">Partner With Us</a>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Slide title</h3>
+        <p>Write your caption here</p>
+        <span>CRC will help Care Providers</span>
       </div>
     </div>
   </div>
@@ -303,263 +294,86 @@
   </button>
 </div>
 
-<!-- Styles -->
-<style>
-  .btn-gold-cta {
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-    color: #012169;
-    font-weight: 700;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 16px rgba(255, 215, 0, 0.4);
-  }
-  .btn-gold-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.6);
-    color: #012169;
-  }
-
-  .btn-british-primary {
-    background: linear-gradient(135deg, #012169 0%, #003087 100%);
-    color: #fff;
-    font-weight: 600;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 16px rgba(1, 33, 105, 0.3);
-  }
-  .btn-british-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(1, 33, 105, 0.4);
-    color: #fff;
-  }
-
-  .form-control:focus {
-    background: rgba(255,255,255,0.2) !important;
-    border-color: #FFD700 !important;
-    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25) !important;
-    color: #fff !important;
-  }
-  
-  .form-control::placeholder {
-    color: rgba(255,255,255,0.7);
-  }
-
-  @media (max-width: 768px) {
-    .carousel-caption h3 {
-      font-size: 1.5rem !important;
-    }
-    .carousel-caption p {
-      font-size: 1rem !important;
-    }
-  }
-</style>
-
-<!-- Introduction Section -->
-<section class="py-5" style="background: linear-gradient(135deg, #012169 0%, #003087 100%); color: #ffffff;">
-  <div class="container text-center">
-    <p class="text-uppercase fw-bold mb-3" style="font-size: 14px; color: #FFD700; letter-spacing: 2px;">
-      <span style="border-bottom: 3px solid #FFD700; padding-bottom: 5px;">Our Mission</span>
-    </p>
-    <h2 class="mb-4 fw-bold" style="font-size: 2.5rem; color: #ffffff;">Raising the Benchmark in Quality Care</h2>
-    <p style="font-size: 1.15rem; max-width: 900px; margin: 0 auto; line-height: 1.8;">
-      Being rated for "outstanding service" by the Care Quality Commission (CQC) is the ambition and goal of every health and social care provider. But what happens if they rate your services as "Inadequate"? That's where CRC steps in to help you turn things around.
-    </p>
-  </div>
-</section>
-
-<!-- How CRC Helps Section -->
-<section class="py-5" style="background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+<!-- Sections -->
+<section class="section-dark text-center">
   <div class="container">
-    <div class="text-center mb-5">
-      <p class="text-uppercase fw-bold mb-3" style="font-size: 14px; color: #C8102E; letter-spacing: 2px;">
-        <span style="border-bottom: 3px solid #C8102E; padding-bottom: 5px;">Our Services</span>
-      </p>
-      <h2 class="fw-bold" style="color: #012169; font-size: 2.5rem; margin-bottom: 1rem;">How CRC Helps Care Providers</h2>
-      <p style="color: #556b7f; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-        Comprehensive support to navigate CQC inspections and achieve excellence
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Service Card 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="h-100" style="background: #ffffff; border-radius: 20px; padding: 35px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 16px 40px rgba(1, 33, 105, 0.2)'; this.style.borderColor='#FFD700'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(1, 33, 105, 0.1)'; this.style.borderColor='transparent'">
-          <div style="width: 70px; height: 70px; margin: 0 auto 25px; background: linear-gradient(135deg, #012169 0%, #003087 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(1, 33, 105, 0.3);">
-            <i class="bi bi-clipboard-data-fill" style="font-size: 2rem; color: #FFD700;"></i>
-          </div>
-          <h4 class="fw-bold mb-3 text-center" style="color: #012169;">Inspection Report Analysis</h4>
-          <p style="color: #556b7f; line-height: 1.7; text-align: center;">
-            Scrutinize inspection reports to identify whether breaches in HSCA 2008 are fully justified
-          </p>
-        </div>
-      </div>
-
-      <!-- Service Card 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="h-100" style="background: #ffffff; border-radius: 20px; padding: 35px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 16px 40px rgba(1, 33, 105, 0.2)'; this.style.borderColor='#FFD700'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(1, 33, 105, 0.1)'; this.style.borderColor='transparent'">
-          <div style="width: 70px; height: 70px; margin: 0 auto 25px; background: linear-gradient(135deg, #C8102E 0%, #E31837 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);">
-            <i class="bi bi-shield-fill-check" style="font-size: 2rem; color: #ffffff;"></i>
-          </div>
-          <h4 class="fw-bold mb-3 text-center" style="color: #012169;">Appeal & Challenge Support</h4>
-          <p style="color: #556b7f; line-height: 1.7; text-align: center;">
-            Challenge inspection reports and prepare appeals when necessary to protect your rating
-          </p>
-        </div>
-      </div>
-
-      <!-- Service Card 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="h-100" style="background: #ffffff; border-radius: 20px; padding: 35px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 16px 40px rgba(1, 33, 105, 0.2)'; this.style.borderColor='#FFD700'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(1, 33, 105, 0.1)'; this.style.borderColor='transparent'">
-          <div style="width: 70px; height: 70px; margin: 0 auto 25px; background: linear-gradient(135deg, #012169 0%, #003087 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(1, 33, 105, 0.3);">
-            <i class="bi bi-file-text-fill" style="font-size: 2rem; color: #FFD700;"></i>
-          </div>
-          <h4 class="fw-bold mb-3 text-center" style="color: #012169;">Factual Accuracy Comments</h4>
-          <p style="color: #556b7f; line-height: 1.7; text-align: center;">
-            Prepare evidence-based comments on draft reports to secure amendments and rating reassessments
-          </p>
-        </div>
-      </div>
-
-      <!-- Service Card 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="h-100" style="background: #ffffff; border-radius: 20px; padding: 35px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 16px 40px rgba(1, 33, 105, 0.2)'; this.style.borderColor='#FFD700'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(1, 33, 105, 0.1)'; this.style.borderColor='transparent'">
-          <div style="width: 70px; height: 70px; margin: 0 auto 25px; background: linear-gradient(135deg, #C8102E 0%, #E31837 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);">
-            <i class="bi bi-exclamation-triangle-fill" style="font-size: 2rem; color: #ffffff;"></i>
-          </div>
-          <h4 class="fw-bold mb-3 text-center" style="color: #012169;">Notice Response</h4>
-          <p style="color: #556b7f; line-height: 1.7; text-align: center;">
-            Prepare representations to Notices of Proposals and respond to Warning Notices effectively
-          </p>
-        </div>
-      </div>
-
-      <!-- Service Card 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="h-100" style="background: #ffffff; border-radius: 20px; padding: 35px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 16px 40px rgba(1, 33, 105, 0.2)'; this.style.borderColor='#FFD700'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(1, 33, 105, 0.1)'; this.style.borderColor='transparent'">
-          <div style="width: 70px; height: 70px; margin: 0 auto 25px; background: linear-gradient(135deg, #012169 0%, #003087 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(1, 33, 105, 0.3);">
-            <i class="bi bi-chat-left-text-fill" style="font-size: 2rem; color: #FFD700;"></i>
-          </div>
-          <h4 class="fw-bold mb-3 text-center" style="color: #012169;">Formal Complaints</h4>
-          <p style="color: #556b7f; line-height: 1.7; text-align: center;">
-            File and manage formal complaints through proper channels with expert guidance
-          </p>
-        </div>
-      </div>
-
-      <!-- Service Card 6 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="h-100" style="background: #ffffff; border-radius: 20px; padding: 35px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 16px 40px rgba(1, 33, 105, 0.2)'; this.style.borderColor='#FFD700'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(1, 33, 105, 0.1)'; this.style.borderColor='transparent'">
-          <div style="width: 70px; height: 70px; margin: 0 auto 25px; background: linear-gradient(135deg, #C8102E 0%, #E31837 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);">
-            <i class="bi bi-clipboard-check-fill" style="font-size: 2rem; color: #ffffff;"></i>
-          </div>
-          <h4 class="fw-bold mb-3 text-center" style="color: #012169;">Mock Verification Audits</h4>
-          <p style="color: #556b7f; line-height: 1.7; text-align: center;">
-            Conduct comprehensive mock audits that mirror CQC verification processes
-          </p>
-        </div>
-      </div>
-    </div>
+    <h2 class="mb-3">Raising the benchmark in quality care</h2>
+    <p>Being rated for “outstanding service” by the Care Quality Commission (CQC) is the ambition and goal of every health and social care provider. But what happens if they rate your services as “Inadequate”?</p>
   </div>
 </section>
 
-<!-- Business Health Section -->
-<section class="py-5" style="background: linear-gradient(135deg, rgba(1, 33, 105, 0.05) 0%, rgba(200, 16, 46, 0.05) 100%);">
+<section class="section-white">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <img src="https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/hhg-1920w.jpg" alt="Business Health" class="img-fluid" style="border-radius: 20px; box-shadow: 0 16px 48px rgba(1, 33, 105, 0.15);">
-      </div>
-      <div class="col-lg-6">
-        <p class="text-uppercase fw-bold mb-3" style="font-size: 14px; color: #C8102E; letter-spacing: 2px;">
-          <span style="border-bottom: 3px solid #C8102E; padding-bottom: 5px;">Protect Your Business</span>
-        </p>
-        <h2 class="fw-bold mb-4" style="color: #012169; font-size: 2.2rem;">CRC Services Look After the Health of Your Business</h2>
-        <p style="color: #556b7f; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px;">
-          With an adverse CQC report, some local commissioning authorities may be reluctant to contract with your organisation, particularly if your company is placed under special measures. This can jeopardise revenue and reputation.
-        </p>
-        <p style="color: #556b7f; font-size: 1.05rem; line-height: 1.8; margin-bottom: 30px;">
-          Don't let a poor rating damage your business. Our expert team will help you navigate regulatory challenges and restore confidence in your services.
-        </p>
-        <a href="contact.html" class="btn btn-british-primary btn-lg px-5 py-3">
-          <i class="bi bi-arrow-right-circle me-2"></i>Get Expert Support
-        </a>
-      </div>
-    </div>
+    <h2 class="mb-3">CRC will help Care Providers</h2>
+    <ul>
+      <li>Scrutinize the Inspection report to identify whether the breaches in HSCA 2008 are fully justified</li>
+      <li>Appeal</li>
+      <li>Challenge the inspection report if deemed necessary</li>
+      <li>Prepare factual accuracy comments on draft inspection reports to secure amendments and get ratings reassessed</li>
+      <li>Prepare evidence-based representations to Notices of Proposals to suspend or cancel registration</li>
+      <li>Respond to or challenge Warning Notices</li>
+      <li>File formal complaints</li>
+      <li>Conduct mock verification audits like CQC</li>
+    </ul>
   </div>
 </section>
 
-<!-- Call to Action Section -->
-<section class="py-5 text-center" style="background: linear-gradient(135deg, #012169 0%, #003087 100%); color: #ffffff;">
+<section class="section-dark">
   <div class="container">
-    <h2 class="fw-bold mb-4" style="font-size: 2.5rem;">Get in Touch with CRC Services Today</h2>
-    <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
-      Contact us for an appointment and see how we can work together to improve the wellbeing of your health or social care organisation.
-    </p>
-    <a href="contact.html" class="btn btn-gold-cta btn-lg px-5 py-3">
-      <i class="bi bi-telephone-fill me-2"></i>Schedule Your Consultation
-    </a>
+    <h2 class="mb-3">CRC Services look after the health of your business</h2>
+    <p>With an adverse CQC report, some local commissioning authorities may be reluctant to contract with your organisation, particularly if your company is placed under special measures. This can jeopardise revenue and reputation.</p>
   </div>
 </section>
 
-<!-- Social Media Section -->
-<section class="py-5" style="background: #f8f9fa;">
+<section class="section-dark">
   <div class="container">
-    <div class="text-center mb-5">
-      <p class="text-uppercase fw-bold mb-3" style="font-size: 14px; color: #C8102E; letter-spacing: 2px;">
-        <span style="border-bottom: 3px solid #C8102E; padding-bottom: 5px;">Stay Connected</span>
-      </p>
-      <h2 class="fw-bold" style="color: #012169; font-size: 2.5rem;">Follow Us on Social Media</h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div style="background: #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); min-height: 600px;">
-          <h4 class="fw-bold mb-4 text-center" style="color: #012169;"><i class="bi bi-twitter" style="color: #1DA1F2;"></i> Twitter Feed</h4>
-          <a class="twitter-timeline" data-height="500" href="https://twitter.com/YousoufLondon?ref_src=twsrc%5Etfw">Tweets by YousoufLondon</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+    <h2 class="mb-3">Get in touch with CRC Services today</h2>
+    <p>Contact us for an appointment and see how we can work together to improve the wellbeing of your health or social care organisation.</p>
+  </div>
+</section>
+
+<!-- Social Media Feeds -->
+<section class="section-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <!-- Twitter Embed -->
+        <a class="twitter-timeline" data-height="600" href="https://twitter.com/YousoufLondon?ref_src=twsrc%5Etfw">Tweets by YousoufLondon</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-      <div class="col-lg-6">
-        <div style="background: #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 8px 24px rgba(1, 33, 105, 0.1); min-height: 600px;">
-          <h4 class="fw-bold mb-4 text-center" style="color: #012169;"><i class="bi bi-facebook" style="color: #1877F2;"></i> Facebook Updates</h4>
-          <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100089226920042" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/profile.php?id=100089226920042" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100089226920042">Facebook Page</a></blockquote>
-          </div>
-          <div id="fb-root"></div>
-          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="FbSDK"></script>
+      <div class="col-lg-6 mb-4">
+        <!-- Facebook Embed -->
+        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100089226920042" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/profile.php?id=100089226920042" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100089226920042">Facebook Page</a></blockquote>
         </div>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="FbSDK"></script>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Form Section -->
-<section class="py-5" style="background: linear-gradient(135deg, rgba(1, 33, 105, 0.95) 0%, rgba(0, 48, 135, 0.95) 100%), url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/ggb-1920w.jpg') center/cover; background-attachment: fixed; color: #ffffff; position: relative; overflow: hidden;">
-  <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%); border-radius: 50%;"></div>
-  <div style="position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(200, 16, 46, 0.1) 0%, transparent 70%); border-radius: 50%;"></div>
-  
-  <div class="container text-center" style="position: relative; z-index: 1;">
-    <h2 class="fw-bold mb-3" style="font-size: 2.5rem;">Leave Us Your Info</h2>
-    <h3 class="mb-5" style="color: #FFD700; font-style: italic; font-size: 1.5rem;">And we'll get right back to you.</h3>
-    <form style="max-width: 700px; margin: 0 auto;">
-      <div class="row g-3">
+<!-- Contact Form -->
+<section class="parallax" style="background-image:url('https://lirp.cdn-website.com/07d7be76/dms3rep/multi/opt/ggb-1920w.jpg');">
+  <div class="container">
+    <h2>Leave us your info</h2>
+    <h3 class="text-warning fst-italic">And we’ll get right back to you.</h3>
+    <form>
+      <div class="row g-3 mt-3">
         <div class="col-md-6">
-          <input type="text" class="form-control form-control-lg" placeholder="Full Name" required style="border-radius: 15px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; padding: 15px 20px;">
+          <input type="text" class="form-control" placeholder="Full Name" required>
         </div>
         <div class="col-md-6">
-          <input type="email" class="form-control form-control-lg" placeholder="Email" required style="border-radius: 15px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; padding: 15px 20px;">
+          <input type="email" class="form-control" placeholder="Email" required>
         </div>
         <div class="col-12">
-          <input type="text" class="form-control form-control-lg" placeholder="Subject" style="border-radius: 15px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; padding: 15px 20px;">
+          <input type="text" class="form-control" placeholder="Subject">
         </div>
         <div class="col-12">
-          <textarea class="form-control form-control-lg" placeholder="Message" rows="5" style="border-radius: 15px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; padding: 15px 20px;"></textarea>
+          <textarea class="form-control" placeholder="Message" rows="4"></textarea>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-gold-cta btn-lg px-5 py-3 mt-3">
-            <i class="bi bi-send-fill me-2"></i>Submit Message
-          </button>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning btn-lg mt-2">Submit</button>
         </div>
       </div>
     </form>
@@ -678,4 +492,3 @@
 </body>
 
 </html>
-
