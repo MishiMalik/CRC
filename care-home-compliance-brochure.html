@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CQC Compliance for UK Care Homes | CRC</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gidugu&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="canonical" href="https://www.consumerprotectionbureau.co.uk/" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/membership-styles.css" />
+  <link rel="stylesheet" href="assets/css/british-theme.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.21/build/css/intlTelInput.css" />
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.21/build/js/intlTelInput.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.21/build/js/utils.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --british-red: #c8102e;
+      --british-blue: #012169;
+      --navy-light: #003087;
+      --gold: #c8102e;
+      --ink: #1f2b3a;
+      --muted: #4f6077;
+      --line: #dce3ef;
+      --shadow-soft: 0 8px 24px rgba(1, 33, 105, 0.1);
+      --shadow-hover: 0 16px 40px rgba(1, 33, 105, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Nunito Sans", sans-serif;
+      color: var(--ink);
+      background: #01206910;
+    }
+
+    .brand-banner {
+      width: 100%;
+      height: 110px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--british-blue);
+    }
+
+    .hero-section {
+      /* background: linear-gradient(135deg, var(--british-blue) 0%, var(--navy-light) 100%); */
+      color: #ffffff;
+      padding: 52px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #c8102e;
+      border: 1px solid rgba(248, 234, 180, 0.45);
+      border-radius: 999px;
+      padding: 6px 13px;
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 4.8vw, 3.2rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color:black;
+    }
+
+    .hero-title span{
+        color:  var(--british-red) !important ;
+    }
+    .hero-title .highlight {
+      color: var(--british-blue) !important;
+    }
+    .hero-sub {
+      max-width: 900px;
+      margin: 0;
+      color: black;
+      font-size: 1.25rem;
+      line-height: 1.75;
+      text-align: center !important;
+    }
+
+    .section-label {
+      font-size: 14px;
+      color: var(--british-red);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-label span {
+      /* border-bottom: 3px solid var(--british-red); */
+      /* padding-bottom: 5px; */
+
+      font-family: "Poppins", sans-serif;
+    font-size:1.4rem;
+    font-weight: 700;
+    line-height: 1.28;
+    }
+
+    .section-title {
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      color: var(--british-blue);
+      font-weight: 700;
+      line-height: 1.28;
+    }
+
+    .matter-card {
+      background: linear-gradient(135deg, #fff7f8 0%, #ffffff 100%);
+      border-radius: 3px;
+      border: 1px solid #ffd5dc;
+      /* box-shadow: var(--shadow-soft); */
+      padding: 24px;
+    }
+
+    .pillar-card,
+    .diff-card {
+      background: #ffffff;
+      border-radius: 3px;
+      border: 1px solid var(--line);
+      /* box-shadow: var(--shadow-soft); */
+      padding: 22px;
+      height: 100%;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .pillar-card:hover,
+    .diff-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .pillar-card h3,
+    .diff-card h3 {
+      font-family: "Poppins", sans-serif;
+      color: var(--british-red);
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .matter-card p,
+    .pillar-card p,
+    .diff-card p {
+      color: var(--muted);
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+.highlight{
+    color: var(--british-red);
+}
+    .quote-band {
+      background: linear-gradient(135deg, var(--british-blue) 0%, #123f98 100%);
+      color: #ffffff;
+      border-radius: 3px;
+      padding: 26px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 1.55;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .bridge-note {
+      border: 1px dashed #9eb2d6;
+      background: #f5f9ff;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: #2b4264;
+      font-weight: 700;
+    }
+
+    .bridge-note .site {
+      display: block;
+      margin-top: 5px;
+      font-weight: 800;
+      color: var(--british-red);
+    }
+
+    .services-wrap {
+      background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid #edf2f8;
+      border-radius: 3px;
+      padding: 24px;
+    }
+
+    .service-chip {
+      border: 1px solid #e9dcad;
+      background: #fff8de;
+      border-radius: 999px;
+      text-align: center;
+      padding: 10px 14px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #2a3a52;
+    }
+
+    .cta-panel {
+      background: linear-gradient(135deg, var(--british-blue) 0%, var(--navy-light) 100%);
+      border-radius: 3px;
+      padding: 28px;
+      color: #ffffff;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cta-panel h2 {
+      font-family: "Poppins", sans-serif;
+      color: #ffe7a0;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .cta-tag {
+      color: #e5efff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .contact-line {
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .contact-line a {
+      color: #ffe7a0;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 231, 160, 0.6);
+    }
+
+    .mention {
+      color: #ffe7a0;
+      font-weight: 800;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 991.98px) {
+      .brand-banner {
+        height: 90px;
+      }
+
+      .hero-section {
+        padding: 44px 0;
+      }
+
+      .cta-panel h2 {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .brand-banner {
+        height: 75px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-sub,
+      .matter-card p,
+      .pillar-card p,
+      .diff-card p,
+      .contact-line {
+        font-size: 0.96rem;
+      }
+
+      .cta-panel h2 {
+        font-size: 1.45rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <img src="assets/images/crc/crc-banner.webp" alt="" class="" />
+
+
+  <main>
+    <section class="hero-section text-center">
+      <div class="container">
+        <div class="eyebrow">CQC Compliance for UK Care Homes</div>
+        <h1 class="hero-title text-uppercase">Turn <span><q>Inadequate</q></span> <br class="d-none d-md-block" />into 
+          <span class="highlight"><q>Good</q></span>. Faster.</h1>
+        <p class="hero-sub mx-auto"  style="color: var(--muted); font-weight: 700;">
+          Practical, balanced CQC compliance support for care homes 
+           delivered by specialists who work
+          alongside your team, in your home, not from a spreadsheet.
+        </p>
+      </div>
+    </section>
+
+    <section class="container py-2">
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="matter-card">
+            <p class="section-label mb-3"><span>Why It Matters</span></p>
+            <p>
+              An Inadequate or Requires Improvement rating threatens occupancy, staff retention, local-authority
+              placements  and at worst, your registration itself. Every week in special measures is revenue lost and
+              reputation damaged.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="pillar-card">
+            <h3>Faster rating recovery</h3>
+            <p>Tailored action plans that fix the right things first, built to pass the next inspection, not tick
+              boxes.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="pillar-card">
+            <h3>Fundamental Standards, covered</h3>
+            <p>Every KLOE mapped to evidence: Safe, Effective, Caring, Responsive, Well-led.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="pillar-card">
+            <h3>Hands-on, on-site</h3>
+            <p>We embed in your home. Registered Managers and carers coached in-situ  not over email.</p>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="quote-band">
+            "We do not sell compliance theatre. We get care homes out of special measures  and keep them out."
+          </div>
+        </div>
+
+        <!-- <div class="col-12">
+          <div class="bridge-note">
+            A 20-minute call could change your next inspection.<br />
+            Turn over - see how we help and how to get in touch.
+            <span class="site">compliance-experts.co.uk</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="container pb-5 mt-5">
+      <!-- <p class="section-label text-center mb-2"><span>Why care homes choose CRC</span></p> -->
+      <h2 class="section-title text-center mb-2 text-uppercase">Why care homes choose <span class="highlight">CRC</span></h2>
+      <p class="text-center mb-4 hero-sub text-center w-100 mw-100" style="color: var(--muted); font-weight: 700;">Delivered through our specialist arm:
+        Care Home Compliance (CHC).</p>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="diff-card">
+            <h3>Care-sector specialists</h3>
+            <p>Residential, nursing, dementia and domiciliary. We know the Fundamental Standards, the KLOEs, the
+              inspectors, and the patterns behind downgrades.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="diff-card">
+            <h3>Turnaround as our core work</h3>
+            <p>Inadequate and Requires Improvement recovery is not an edge case, it is what we are built for.
+              Practical, balanced, tailored to your home.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="diff-card">
+            <h3>Evidence that holds up under scrutiny</h3>
+            <p>Care plans, MAR, safeguarding, governance, we build audit-ready trails that survive the inspector's
+              challenge, not just the initial read.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="diff-card">
+            <h3>Culture, not just paperwork</h3>
+            <p>Registered Managers, seniors and frontline carers are coached in-situ. Well-led is not a policy, it is
+              how your team behaves on the night shift.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="services-wrap ">
+        <p class="section-label text-center mb-4 mt-3"><span>How We Help</span></p>
+        <div class="row g-3">
+          <div class="col-12 col-md-4"><div class="service-chip">Mock CQC inspections</div></div>
+          <div class="col-12 col-md-4"><div class="service-chip">Action plan delivery</div></div>
+          <div class="col-12 col-md-4"><div class="service-chip">Registered Manager support</div></div>
+          <div class="col-12 col-md-4"><div class="service-chip">Policy and evidence overhaul</div></div>
+          <div class="col-12 col-md-4"><div class="service-chip">Safeguarding and governance</div></div>
+          <div class="col-12 col-md-4"><div class="service-chip">Staff training and coaching</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5 ">
+      <div class="cta-panel text-center">
+        <h2>Book a confidential 20 minute call.</h2>
+        <div class="cta-tag text-white">No prep needed. No sales pitch. A direct read on your next inspection.</div>
+        <div class="contact-line text-white">
+          <a href="tel:+442035854003" class="text-white">+44 (0)20 3585 4003</a> | <a
+            href="mailto:info@compliance-experts.co.uk" class="text-white">info@compliance-experts.co.uk</a><br />
+          www.compliance-experts.co.uk<br />
+           83 Victoria Street, Westminster, London SW1H 0HW<br />
+          Mon-Fri, 9:00-17:00
+        </div>
+        <div class="mention">Mention this flier when you call.</div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

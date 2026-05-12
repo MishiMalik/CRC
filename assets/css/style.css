@@ -169,6 +169,38 @@ body {
     text-decoration: none;
 }
 
+/* Site-wide primary button matching homepage CTA */
+.site-btn {
+    background: #ffffff;
+    color: #C8102E;
+    padding: 14px 32px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: none;
+}
+.site-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/* Brand variants for social and special buttons */
+.site-btn--facebook { background: #3b5998; color: #fff; }
+.site-btn--twitter { background: #1DA1F2; color: #fff; }
+.site-btn--linkedin { background: #0077b5; color: #fff; }
+.site-btn--disabled { background: #6c757d; color: #fff; opacity: 0.7; cursor: not-allowed; }
+
+.site-btn--facebook:hover, .site-btn--twitter:hover, .site-btn--linkedin:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+
 .complaint-btn {
     background-color: var(--secondry);
     padding: 5px 12px !important;

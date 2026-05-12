@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)file:///C:/Users/sonny/OneDrive/Documenten/Claude/Projects/CRC/CRC_CareHome_Flier.html -->
+<html lang="en-GB">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>CRC — The Compliance Experts: CQC compliance for UK care homes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Lexend:wght@400;600;700;800&display=swap');
+
+    /* ---- Print sizing: A5 portrait, 2 pages ---- */
+    @page {
+      size: A5 portrait;
+      margin: 0;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #e5e5e5;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    :root {
+      --primary-font: "Lexend", "Segoe UI", sans-serif;
+      --secondry-font: "Inter", "Helvetica Neue", sans-serif;
+      --primary: #012169;
+      --secondary: #E31837;
+      --accent: #2d5a8c;
+      --light-bg: #f5f7fa;
+      --ink: #1a2e4d;
+      --muted: #556b7f;
+      --pale: #d1d9e8;
+      --paleteal: #dce8f5;
+      --line: #d8dee8;
+      --card: #ffffff;
+      --soft: #eef3fa;
+    }
+
+    body {
+      font-family: var(--secondry-font);
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .page {
+      width: 148mm;
+      height: 210mm;
+      background: linear-gradient(180deg, #f7f9fc 0%, #f2f6fb 100%);
+      position: relative;
+      overflow: hidden;
+      margin: 8mm auto;
+      /* screen preview gap; ignored in print */
+      box-shadow: 0 2px 14px rgba(0, 0, 0, .15);
+      border: 0.25mm solid var(--line);
+      page-break-after: always;
+    }
+
+    .page:last-child {
+      page-break-after: auto;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+
+    /* ===== Page 1 ===== */
+    .p1-band {
+      /* background: linear-gradient(135deg, #142845 0%, #1f3c66 100%); */
+      color: #fff;
+      /* padding: 7mm 10mm 6mm; */
+      padding: 10px 40px;
+      position: relative;
+    }
+
+    .brand-banner {
+      width: 100%;
+      /* max-height: 23mm; */
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 1.5mm;
+      display: block;
+      /* padding: 2mm; */
+    }
+
+    /* .p1-band::after {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: -2mm;
+    height: 2mm; background: var(--secondary);
+  } */
+    .wordmark {
+      font-family: var(--primary-font);
+      font-weight: 800;
+      font-size: 22pt;
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-family: var(--primary-font);
+      color: var(--secondary);
+      font-size: 8.5pt;
+      margin-top: 2mm;
+      letter-spacing: .4px;
+    }
+
+    .eyebrow {
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 8pt;
+      letter-spacing: 1.4px;
+      margin-top: 5mm;
+      text-transform: uppercase;
+    }
+
+    .headline {
+      font-family: var(--primary-font);
+      font-weight: 800;
+      font-size: 18pt;
+      line-height: 1.1;
+      margin-top: 2mm;
+      max-width: 106mm;
+      color: var(--primary);
+    }
+
+    .subhook {
+      margin: 5mm 10mm 0;
+      background: var(--card);
+      border: 0.25mm solid var(--line);
+      border-left: 1.1mm solid var(--secondary);
+      border-radius: 1.2mm;
+      padding: 4.5mm 4.5mm 4mm;
+      font-size: 10pt;
+      line-height: 1.45;
+      box-shadow: 0 1.2mm 2.5mm rgba(26, 46, 77, .06);
+    }
+
+    .subhook b {
+      color: var(--primary);
+    }
+
+    .why {
+      margin: 4.5mm 10mm 0;
+      background: var(--card);
+      border: 0.25mm solid var(--line);
+      border-radius: 1.2mm;
+      padding: 4.5mm;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 8.5pt;
+      letter-spacing: 1.5px;
+      margin-bottom: 1.5mm;
+    }
+
+    .why p {
+      margin: 0;
+      font-size: 9.1pt;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5mm;
+      padding: 4.5mm 10mm 0;
+    }
+
+    .pillar {
+      background: var(--card);
+      border: 0.25mm solid var(--line);
+      border-radius: 1.2mm;
+      padding: 4.5mm 3.8mm 3.8mm;
+      position: relative;
+      min-height: 42mm;
+      box-shadow: 0 1mm 2mm rgba(26, 46, 77, .05);
+    }
+
+    .pillar::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1.2mm;
+      background: var(--secondary);
+    }
+
+    .pillar h3 {
+      margin: 0 0 1.5mm;
+      font-size: 9.2pt;
+      color: var(--primary);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .pillar p {
+      margin: 0;
+      font-size: 7.8pt;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+
+    .quote {
+      margin: 4.5mm 10mm 0;
+      background: #20395f;
+      color: #f3f6fb;
+      padding: 4.5mm 4.5mm 4.5mm 6mm;
+      position: relative;
+      border-radius: 1.2mm;
+      font-style: italic;
+      font-size: 9.5pt;
+      line-height: 1.42;
+    }
+
+    .quote::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2mm;
+      background: var(--secondary);
+    }
+
+    .footer-cta {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #274e83 0%, #2d5a8c 100%);
+      color: #fff;
+      padding: 5.2mm 8mm;
+      text-align: center;
+    }
+
+    .footer-cta::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1.5mm;
+      background: var(--secondary);
+    }
+
+    .footer-cta .line1 {
+      font-weight: 800;
+      font-size: 10.2pt;
+      letter-spacing: .2px;
+    }
+
+    .footer-cta .line2 {
+      margin-top: 1.2mm;
+      color: var(--paleteal);
+      font-size: 8.6pt;
+    }
+
+    .footer-url {
+      position: absolute;
+      bottom: 2.3mm;
+      right: 10mm;
+      font-size: 7pt;
+      color: #CFE3E3;
+    }
+
+    /* ===== Page 2 ===== */
+    .p2-head {
+      background: linear-gradient(135deg, #142845 0%, #1f3c66 100%);
+      color: #fff;
+      padding: 6mm 10mm 5mm;
+      position: relative;
+    }
+
+    .p2-head::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1.5mm;
+      height: 1.5mm;
+      background: var(--secondary);
+    }
+
+    .p2-head h2 {
+      margin: 0;
+      font-size: 13.4pt;
+      font-weight: 800;
+      font-family: var(--primary-font);
+    }
+
+    .p2-head .sub {
+      font-style: italic;
+      color: var(--secondary);
+      font-size: 8.5pt;
+      margin-top: 1.2mm;
+    }
+
+    .diffs {
+      padding: 5mm 10mm 0;
+    }
+
+    .diff {
+      display: grid;
+      grid-template-columns: 4mm 1fr;
+      column-gap: 2.4mm;
+      margin-bottom: 2.4mm;
+      background: var(--card);
+      border: 0.25mm solid var(--line);
+      border-left: 0.9mm solid var(--accent);
+      border-radius: 1.1mm;
+      padding: 3.1mm 3.2mm;
+    }
+
+    .diff .dot {
+      width: 2mm;
+      height: 2mm;
+      background: var(--secondary);
+      margin-top: 1.8mm;
+    }
+
+    .diff h3 {
+      margin: 0 0 1mm;
+      color: var(--primary);
+      font-size: 9.6pt;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .diff p {
+      margin: 0;
+      font-size: 8pt;
+      line-height: 1.35;
+      color: var(--muted);
+    }
+
+    .services {
+      margin: 3mm 10mm 0;
+      background: var(--card);
+      border: 0.25mm solid var(--line);
+      border-radius: 1.2mm;
+      padding: 4.2mm;
+      position: relative;
+      box-shadow: 0 1mm 2mm rgba(26, 46, 77, .05);
+    }
+
+    .services::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1.2mm;
+      background: var(--accent);
+    }
+
+    .services-label {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 8.5pt;
+      letter-spacing: 1.4px;
+      margin-bottom: 2.6mm;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.6mm 4.5mm;
+    }
+
+    .services li {
+      font-size: 8.3pt;
+      position: relative;
+      padding-left: 4.2mm;
+      color: var(--ink);
+    }
+
+    .services li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.4mm;
+      width: 1.5mm;
+      height: 1.5mm;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    .cta {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, #1a2e4d 0%, #142845 100%);
+      color: #fff;
+      padding: 5.5mm 6mm 4.8mm;
+      text-align: center;
+    }
+
+    .cta::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1.5mm;
+      background: var(--secondary);
+    }
+
+    .cta .headline2 {
+      font-weight: 800;
+      font-size: 11.8pt;
+      font-family: var(--primary-font);
+    }
+
+    .cta .tag {
+      color: var(--pale);
+      font-size: 8.4pt;
+      margin-top: 1.6mm;
+    }
+
+    .cta .contact {
+      margin-top: 2.8mm;
+      color: var(--secondary);
+      font-weight: 800;
+      font-size: 9.2pt;
+    }
+
+    .cta .contact a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    .cta .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .cta .web {
+      margin-top: 1.1mm;
+      font-size: 8.8pt;
+    }
+
+    .cta .addr {
+      margin-top: 1.1mm;
+      color: var(--pale);
+      font-size: 7.7pt;
+    }
+
+    .cta .hours {
+      margin-top: 0.6mm;
+      color: var(--pale);
+      font-size: 7.5pt;
+      font-style: italic;
+    }
+
+    .cta .mention {
+      margin-top: 2mm;
+      color: #9FB8D1;
+      font-size: 7.3pt;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============== PAGE 1 ============== -->
+  <section class="page">
+    <img class="brand-banner w-100" src="assets/images/crc/crc-banner.webp" alt="CRC banner">
+
+    <div class="p1-band">
+      <div class="eyebrow">CQC COMPLIANCE FOR UK CARE HOMES</div>
+      <div class="headline">Turn 'Inadequate'<br>into 'Good'. Faster.</div>
+    </div>
+
+    <div class="subhook">
+      Practical, proportionate CQC compliance support for care homes —
+      delivered by specialists who work <b>alongside your team, in your home</b>,
+      not from a spreadsheet.
+    </div>
+
+    <div class="why">
+      <div class="section-label">WHY IT MATTERS</div>
+      <p>An Inadequate or Requires Improvement rating threatens occupancy,
+        staff retention, local-authority placements — and, at worst, your
+        registration itself. Every week in special measures is revenue lost
+        and reputation damaged.</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Faster rating recovery</h3>
+        <p>Tailored action plans that fix the right things first — built to pass the next inspection, not tick boxes.
+        </p>
+      </div>
+      <div class="pillar">
+        <h3>Fundamental Standards, covered</h3>
+        <p>Every KLOE mapped to evidence: Safe, Effective, Caring, Responsive, Well-led.</p>
+      </div>
+      <div class="pillar">
+        <h3>Hands-on, on-site</h3>
+        <p>We embed in your home. Registered Managers and carers coached in-situ — not over email.</p>
+      </div>
+    </div>
+
+    <div class="quote">
+      "We don't sell compliance theatre. We get care homes out of
+      special measures — and keep them out."
+    </div>
+
+    <div class="footer-cta">
+      <div class="line1">A 20-minute call could change your next inspection.</div>
+      <div class="line2">Turn over — see how we help and how to get in touch.</div>
+    </div>
+    <div class="footer-url">compliance-experts.co.uk</div>
+  </section>
+
+  <!-- ============== PAGE 2 ============== -->
+  <section class="page">
+    <div class="p2-head">
+      <h2>Why care homes choose CRC</h2>
+      <div class="sub">Delivered through our specialist arm: Care Home Compliance (CHC).</div>
+    </div>
+
+    <div class="diffs">
+      <div class="diff">
+        <div class="dot"></div>
+        <div>
+          <h3>Care-sector specialists</h3>
+          <p>Residential, nursing, dementia and domiciliary. We know the Fundamental Standards, the KLOEs, the
+            inspectors, and the patterns behind downgrades.</p>
+        </div>
+      </div>
+      <div class="diff">
+        <div class="dot"></div>
+        <div>
+          <h3>Turnaround as our core work</h3>
+          <p>Inadequate and Requires Improvement recovery isn't an edge case — it's what we're built for. Practical,
+            proportionate, tailored to your home.</p>
+        </div>
+      </div>
+      <div class="diff">
+        <div class="dot"></div>
+        <div>
+          <h3>Evidence that holds up under scrutiny</h3>
+          <p>Care plans, MAR, safeguarding, governance — we build audit-ready trails that survive the inspector's
+            challenge, not just the initial read.</p>
+        </div>
+      </div>
+      <div class="diff">
+        <div class="dot"></div>
+        <div>
+          <h3>Culture, not just paperwork</h3>
+          <p>Registered Managers, seniors and frontline carers are coached in-situ. Well-led isn't a policy — it's how
+            your team behaves on the night shift.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="services-label">HOW WE HELP</div>
+      <ul>
+        <li>Mock CQC inspections</li>
+        <li>Action plan delivery</li>
+        <li>Registered Manager support</li>
+        <li>Policy &amp; evidence overhaul</li>
+        <li>Safeguarding &amp; governance</li>
+        <li>Staff training &amp; coaching</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <div class="headline2">Book a confidential 20-minute call.</div>
+      <div class="tag">No prep needed. No sales pitch. A direct read on your next inspection.</div>
+      <div class="contact"><a href="tel:+442035854003">+44 (0)20 3585 4003</a> | <a
+          href="mailto:info@compliance-experts.co.uk">info@compliance-experts.co.uk</a></div>
+      <div class="web">www.compliance-experts.co.uk</div>
+      <div class="addr">Suite 1.01, 83 Victoria Street, Westminster, London SW1H 0HW</div>
+      <div class="hours">Mon–Fri, 9:00–17:00</div>
+      <div class="mention">Mention this flier when you call.</div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>

@@ -45,8 +45,8 @@
                 <p>📍 83 Victoria Street, Westminster, London, SW1H 0HW</p>
                 <p>✉️ <a href="mailto:info@compliance-experts.co.uk"
                         style="color:var(--secondry);text-decoration:none;">info@compliance-experts.co.uk</a></p>
-                <p>📞 <a href="tel:02035854002"
-                        style="color:var(--secondry);text-decoration:none;">0203 585 4002</a></p>
+                <p>📞 <a href="tel:02035854003"
+                        style="color:var(--secondry);text-decoration:none;">0203 585 4003</a></p>
                 <p style="margin-top:12px;font-size:13px;color:#aaa;"><em>Business Hours: Monday to Friday, 9:00 – 17:00</em></p>
             </div>
 

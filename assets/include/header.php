@@ -7,8 +7,8 @@
                         <div class="d-flex align-items-center contact-details">
                             <div class="d-flex align-items-center me-2">
                                 <i class="bi bi-telephone-fill me-2"></i>
-                                <a href="tel:+44 (0)2035854002"> +44
-                                    (0)2035854002</a>
+                                <a href="tel:+44 (0)2035854003"> +44
+                                    (0)2035854003</a>
                             </div>
                             <div class="d-flex align-items-center ms-2">
                                 <i class="bi bi-envelope-fill me-2"></i>
@@ -21,7 +21,8 @@
                             <!-- Facebook -->
                             <a data-mdb-ripple-init target="_blank" class="btn text-white btn-floating m-1"
                                 style="background-color: #3b5998;"
-                                href="https://web.facebook.com/profile.php?id=61570163952467" aria-label="Facebook"
+                                href="https://web.facebook.com/profile.php?id=61570163952467" 
+                                aria-label="Facebook"
                                 role="button"><i class="fab fa-facebook-f"></i></a>
 
                             <!-- Twitter -->
