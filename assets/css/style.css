@@ -1,7 +1,8 @@
 :root {
     --primary-font: "Lexend", "Segoe UI", sans-serif;
     --secondry-font: "Inter", "Helvetica Neue", sans-serif;
-    --primary: #1a2e4d;
+    /* --primary: #1a2e4d; */
+    --primary: #003087;
     --secondry: #d4af37;
     --accent: #2d5a8c;
     --dark-bg: #0f1a28;
